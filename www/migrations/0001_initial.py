@@ -7,19 +7,26 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='MoodOfTheDay',
+            name="MoodOfTheDay",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('person_name', models.CharField(max_length=32)),
-                ('year', models.IntegerField()),
-                ('month', models.IntegerField()),
-                ('day', models.IntegerField()),
-                ('mood', models.IntegerField()),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("person_name", models.CharField(max_length=32)),
+                ("year", models.IntegerField()),
+                ("month", models.IntegerField()),
+                ("day", models.IntegerField()),
+                ("mood", models.IntegerField()),
             ],
         ),
     ]

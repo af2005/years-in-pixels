@@ -7,4 +7,6 @@ class MoodOfTheDay(models.Model):
     mood = models.IntegerField()
 
     def __str__(self):
-        return f"{self.person_name} set its mood to {self.mood} on {self.date.isoformat()}"
+        return (
+            f"{self.person_name} set its mood to {self.mood} on {self.date.isoformat()}"
+        )
