@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'viewyear.apps.ViewyearConfig',
+    'www.apps.ViewyearConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
